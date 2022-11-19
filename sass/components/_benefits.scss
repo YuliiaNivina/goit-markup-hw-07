@@ -40,7 +40,7 @@
 .benefits__card {
     backface-visibility: hidden;
 
-    @include centered-flex;
+    @include centered-flex ($jc: center);
 
     position: absolute;
     width: 100%;

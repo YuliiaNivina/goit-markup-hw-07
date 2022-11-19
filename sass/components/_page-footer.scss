@@ -7,8 +7,7 @@
 }
 
 .page-footer__container {
-    display: flex;
-    align-items: baseline;
+    @include centered-flex ($ai: baseline)
 }
 
 .page-footer__subtitle {
@@ -85,7 +84,7 @@
 }
 
 .form-footer__btn {
-    @include centered-flex (inline-flex)
+    @include centered-flex (inline-flex, $jc: center)
 }
 
 .form-footer__btn-icon {

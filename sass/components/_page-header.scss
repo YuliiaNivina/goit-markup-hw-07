@@ -9,15 +9,13 @@
     background-color: $main-white-color;
 }
 .page-header__container {
-    display: flex;
-    align-items: center;
+    @include centered-flex;
 }
 
 /* Навігація */
 
 .navigation {
-    display: flex;
-    align-items: center;
+    @include centered-flex;
 
     font-weight: 500;
     line-height: 1.14;
@@ -72,8 +70,7 @@
 }
 
 .contacts__item {
-    display: flex;
-    align-items: center;
+    @include centered-flex;
 
     color: $secondary-text-color;
 
@@ -85,8 +82,7 @@
 .contacts__link {
     @include transition(color);
 
-    display: flex;
-    align-items: center;
+    @include centered-flex;
 
     font-weight: 500;
     line-height: 1.14;

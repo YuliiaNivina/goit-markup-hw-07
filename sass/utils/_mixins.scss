@@ -2,8 +2,11 @@
     transition: $property $duration $timing;
 }
 
-@mixin centered-flex($type: flex) {
+@mixin centered-flex($type: flex, $ai: center, $jc: false) {
     display: $type;
-    align-items: center;
-    justify-content: center;
+    align-items: $ai;
+
+    @if $jc {
+        justify-content: $jc;
+    }
 }
